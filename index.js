@@ -87,7 +87,7 @@ const equipmentSchema = new mongoose.Schema({
 
 const equipmentModel = mongoose.model("Equipments", equipmentSchema);
 
-mongoose.connect("mongodb://127.0.0.1:27017/project1")
+mongoose.connect("mongodb+srv://mern123:mern@cluster0.mfbpf0t.mongodb.net/")
     .then(() => {
         console.log("Connected to MongoDB");
         app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
